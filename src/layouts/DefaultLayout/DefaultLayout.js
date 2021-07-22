@@ -8,6 +8,7 @@ import { fix } from 'prelude-ls';
 import './DefaultLayout.less';
 import HeadNav from '../../common/HeadNav'
 import FooterNav from '../../common/FooterNav'
+import { Route } from 'react-router-dom';
 const { Header, Content, Sider, Footer } = Layout;
 const { Item } = Menu
 export default class DefaultLayout extends Component {
@@ -15,7 +16,7 @@ export default class DefaultLayout extends Component {
         return (
             <div id="DefaultLayout">
                 <HeadNav/>
-                
+                <Route></Route>
                 {/* <Menu mode="horizontal" theme="dark" style={{ position: "fixed", top: 0, width: "200vh" }}>
                     <Item style={{ marginLeft: "25vh" }}> <WechatOutlined style={{ color: "green" }} />contact</Item>
                     <Item style={{ marginLeft: "25vh" }}><HomeOutlined />home</Item>

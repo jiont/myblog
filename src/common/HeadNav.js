@@ -19,16 +19,16 @@ export default class HeadNav extends Component {
                             mode="horizontal"
                         >
                             <Menu.Item key="home">
-                                首页
+                                <Link to="/home">首页</Link>
                             </Menu.Item>
                             <Menu.Item key="aboutme">
-                                关于我
+                                <Link to="/home/about">关于我</Link>
                             </Menu.Item>
                             <Menu.Item key="article">
-                                文章分享
+                                <Link to="/home/article"></Link>文章分享
                             </Menu.Item>
                             <Menu.Item key="resource">
-                                资源共享
+                                <Link to="/home/resource"></Link>资源共享
                             </Menu.Item>
                         </Menu>
                     </div>

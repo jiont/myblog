@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd'
 import { GlobalOutlined, WechatOutlined, IdcardOutlined, HomeOutlined } from '@ant-design/icons';
+import {Link} from 'react-router-dom';
 import './HeadNav.less'
 export default class HeadNav extends Component {
     state = {
         current: 'home',
+    }
+    handleClick=(e)=>{ //点击事件
+        this.setState({current:e.key});
     }
     render() {
         return (
@@ -17,6 +21,7 @@ export default class HeadNav extends Component {
                         <Menu
                             selectedKeys={[this.state.current]}
                             mode="horizontal"
+                            onClick={this.handleClick}
                         >
                             <Menu.Item key="home">
                                 <Link to="/home">首页</Link>
